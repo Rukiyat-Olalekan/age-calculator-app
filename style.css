@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+main {
+  width: 50vw;
+  height: 80vh;
+  margin: 5rem auto;
+  padding: 3rem;
+  border-radius: 1rem 1rem 16rem 1rem;
+  box-shadow: 5px 5px 20px 2px rgba(175, 175, 175, 0.5);
+}
+button {
+  cursor: pointer;
+  outline: none;
+  font-size: 1.2rem;
+  color: white;
+  background: none;
+  background-color: hsl(259, 100%, 65%);
+  text-align: center;
+  border-radius: 100%;
+  border: none;
+  padding: 1rem;
+}
+.button {
+  float: right;
+  margin: 1rem auto;
+  width: 2rem;
+}
+.error {
+  color: red;
+}
+.inputs {
+  display: flex;
+  flex: 1;
+  gap: 2rem;
+}
+.input label {
+  display: block;
+  text-transform: uppercase;
+  color: hsl(0, 1%, 44%);
+  font-weight: bold;
+}
+
+.input input {
+  font-weight: 700;
+  font-size: 32px;
+  border: 1px solid rgb(175, 175, 175);
+  display: block;
+  width: 120px;
+  padding: 0.5rem 0.5rem;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.input input:focus,
+.input input:hover {
+  outline-color: hsl(259, 100%, 65%);
+}
+.input input::placeholder {
+  color: hsl(0, 1%, 44%);
+}
+.hide {
+  color: hsl(259, 100%, 65%);
+}
+#displayPara {
+  margin-top: 6rem;
+}
+#yearPara,
+#monthPara,
+#dayPara {
+  color: black;
+  font-weight: 800;
+  font-size: 5.2rem;
+  font-style: italic;
+  margin: 0;
+  line-height: 1;
+}
+@media only screen and (max-width: 450px) {
+  main {
+    width: 80vw;
+    height: 60vh;
+    padding: 2rem;
+  }
+  .inputs {
+    gap: 0;
+  }
+
+  .input label {
+    margin-bottom: 0.5rem;
+  }
+
+  .input input {
+    width: 90%;
+    margin-right: 0.5rem;
+    font-size: 30px;
+  }
+
+  #displayPara {
+    margin-top: 4rem;
+  }
+
+  #yearPara,
+  #monthPara,
+  #dayPara {
+    font-size: 3rem;
+  }
+}
